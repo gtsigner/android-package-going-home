@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_move"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_bg"
+    android:orientation="vertical"
+    tools:context="com.onynet.a30home.activity.MoveActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:targetApi="lollipop"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/icons"
+            android:textSize="17.5sp"
+            android:typeface="normal"/>
+
+        <ImageView
+            android:foreground="?android:selectableItemBackground"
+            android:id="@+id/toolbar_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/icons"
+            style="@style/Base.Widget.AppCompat.ActionButton.Overflow"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/ic_help"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:layout_margin="@dimen/spacing"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <EditText
+                android:id="@+id/move_et_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:background="@null"
+                android:hint="运单号"
+                android:singleLine="true"
+                android:padding="@dimen/spacing" />
+
+            <ImageView
+                android:id="@+id/move_iv_scan"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:src="@drawable/img_scan" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/move_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

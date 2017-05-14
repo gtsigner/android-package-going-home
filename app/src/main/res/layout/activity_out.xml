@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_batch_put"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_bg"
+    android:orientation="vertical"
+    tools:context="com.onynet.a30home.activity.OutActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        style="@style/activity_put_card_view_style"
+        android:layout_height="300dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/out_rl_camera"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_above="@+id/ll"
+                android:id="@+id/out_iv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                style="@style/activity_put_ll_style"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll"
+                >
+                <ImageView
+                    android:id="@+id/out_iv_camera"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/img_camera" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="拍照/照片"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView style="@style/activity_put_card_view_style">
+
+        <LinearLayout style="@style/activity_put_ll_style">
+
+
+            <EditText
+                android:id="@+id/out_et_theAwb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:background="@null"
+                android:hint="@string/please_scan_theAwb"
+                android:inputType="text"
+                android:padding="@dimen/spacing" />
+
+            <ImageView
+                android:id="@+id/out_iv_scan"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:src="@drawable/img_scan" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/out_ll_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_marginTop="@dimen/spacing"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/spacing"
+            android:text="快递公司"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_bg">
+
+            <Spinner
+                android:id="@+id/out_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/out_btn_confirm_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="@drawable/btn_solid_bg"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/confirm_out"
+        android:textColor="@color/icons"
+        android:textSize="@dimen/btn_text_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing">
+
+        <CheckBox
+            android:id="@+id/out_cb_quick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="开启快速出库"
+            android:textColor="@color/primary" />
+    </RelativeLayout>
+
+
+</LinearLayout>

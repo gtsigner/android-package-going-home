@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing">
+
+            <TextView
+                android:id="@+id/error_tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing"
+                android:textColor="@color/primary2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="已出库"/>
+
+            <LinearLayout
+                android:id="@+id/error_ll_express_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing"
+                android:layout_marginRight="@dimen/spacing"
+                android:layout_marginTop="@dimen/spacing"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/error_tv_company_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="@dimen/spacing"
+                    android:text="@string/express_company"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_down_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/spacing"
+                android:layout_marginRight="@dimen/spacing"
+                android:layout_marginTop="@dimen/spacing"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/error_tv_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/number"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/spacing"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/error_iv_call"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:foreground="?android:selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_call" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/edit_bg"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing"
+                android:layout_marginLeft="@dimen/spacing"
+                android:layout_marginRight="@dimen/spacing"
+                android:layout_marginTop="@dimen/spacing">
+
+                <EditText
+                    android:id="@+id/error_tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="16sp"
+                    android:hint="@string/name"
+                    android:singleLine="true"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing"
+                android:background="@drawable/edit_bg"
+                android:layout_marginLeft="@dimen/spacing"
+                android:layout_marginRight="@dimen/spacing"
+                android:layout_marginTop="@dimen/spacing">
+
+                <EditText
+                    android:id="@+id/error_tv_up_goods_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="16sp"
+                    android:hint="@string/up_goods_code"
+                    android:singleLine="true"
+                    android:background="@null"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/spacing"
+                android:layout_marginRight="@dimen/spacing"
+                android:layout_marginTop="@dimen/spacing">
+
+                <Button
+                    android:foreground="?android:selectableItemBackground"
+                    android:id="@+id/error_btn_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_border_bg"
+                    android:text="@string/back"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/btn_text_size" />
+
+                <Button
+                    android:foreground="?android:selectableItemBackground"
+                    android:id="@+id/error_btn_save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_solid_bg"
+                    android:text="@string/save"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/btn_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

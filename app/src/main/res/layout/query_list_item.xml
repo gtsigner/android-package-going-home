@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/edit_radius"
+    android:paddingRight="@dimen/edit_radius">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="@dimen/edit_radius"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/query_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/query_tv_packge_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已到站"
+                            android:textColor="@color/primary_text"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="提货码:"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/query_up_goods_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing"
+                            android:text="1024"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/query_item_ll_style">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_name" />
+
+                    <TextView
+                        android:id="@+id/query_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:text="kimi"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/query_item_ll_style">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/query_tv_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:text="13219547856"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/query_item_ll_style">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_express" />
+
+                    <TextView
+                        android:id="@+id/query_tv_express_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:text="圆通快递"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/query_item_ll_style">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_bar_code" />
+
+                    <TextView
+                        android:id="@+id/query_tv_bar_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:text="20046"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/query_item_ll_style">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_put_time" />
+
+                    <TextView
+                        android:id="@+id/query_tv_put_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:text="2017-01-11 11:23"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/query_item_ll_style"
+                    android:id="@+id/query_ll_out_time">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_out_time" />
+
+                    <TextView
+                        android:id="@+id/query_tv_out_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:text="2017-01-15 19:23"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/query_ll_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="@dimen/spacing"
+                    android:layout_marginTop="@dimen/spacing"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_img" />
+
+                    <LinearLayout
+                        android:id="@+id/query_ll_camera"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/query_tv_camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/photo_put"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/query_iv_camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitStart"
+                            android:src="@mipmap/ic_pic" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/query_save_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:background="@drawable/btn_solid_bg"
+                        android:foreground="?android:selectableItemBackground"
+                        android:text="@string/save_img"
+                        android:textColor="@color/icons" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

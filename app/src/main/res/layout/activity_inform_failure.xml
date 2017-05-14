@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inform_failure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_bg"
+    tools:context="com.onynet.a30home.activity.InformFailureActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="@dimen/spacing"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_marginTop="@dimen/spacing">
+
+        <CheckBox
+            android:id="@+id/informFailure_cb_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/select_all" />
+
+        <TextView
+            android:id="@+id/informFailure_tv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_border_bg"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/spacing"
+            android:paddingRight="@dimen/spacing"
+            android:paddingTop="4dp"
+            android:text="@string/resend"
+            android:textColor="@color/primary" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/informFailure_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing"
+        android:divider="@null"
+        >
+
+    </ListView>
+
+</LinearLayout>

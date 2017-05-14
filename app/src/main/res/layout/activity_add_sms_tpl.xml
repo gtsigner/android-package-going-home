@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="@dimen/edit_radius"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tmpl_et_msg_tmpl"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@null"
+                android:gravity="top"
+                android:padding="@dimen/spacing"
+                android:singleLine="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width_size"
+                android:background="@color/primary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing"
+                    android:gravity="center"
+                    android:text="@string/insert"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="@dimen/divider_width_size"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tmpl_tv_express_company"
+                            style="@style/msg_tmpl_tv_style"
+                            android:text="快递公司" />
+
+                        <TextView
+                            android:id="@+id/tmpl_tv_number"
+                            style="@style/msg_tmpl_tv_style"
+                            android:text="单号" />
+
+                        <TextView
+                            android:id="@+id/tmpl_tv_location"
+                            style="@style/msg_tmpl_tv_style"
+                            android:text="地址" />
+
+                        <TextView
+                            android:id="@+id/tmpl_tv_goods_code"
+                            style="@style/msg_tmpl_tv_style"
+                            android:text="取货码" />
+
+                        <TextView
+                            android:id="@+id/tmpl_tv_time"
+                            style="@style/msg_tmpl_tv_style"
+                            android:text="营业时间" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/tmpl_btn_confirm_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/btn_solid_bg"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/confirm_add"
+        android:textColor="@color/icons"
+        android:textSize="@dimen/btn_text_size" />
+
+</LinearLayout>

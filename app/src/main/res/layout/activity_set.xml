@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_bg"
+    tools:context="com.onynet.a30home.activity.SetActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/icons"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/msg_inform"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/set_sw_msg_inform"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/icons"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/wechat_inform"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/set_sw_wechat_inform"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/icons"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/business_hours"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/set_et_change_tiem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="7:00-23:00" />
+
+                <Button
+                    android:id="@+id/set_btn_change_time"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_border_bg"
+                    android:text="@string/change"
+                    android:textColor="@color/primary" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/set_ll_template"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/icons"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="@string/set_template"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/icons"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/version_number"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/set_tv_version_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="end|center_vertical"
+                    android:text="3.0.3.161225"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/set_ll_version_update"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/icons"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/version_update"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="end|center_vertical"
+                    android:text="已是最新版本"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_width_size"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/set_ll_about"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/icons"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/about"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

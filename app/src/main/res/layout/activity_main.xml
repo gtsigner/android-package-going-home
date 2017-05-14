@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_bg"
+    tools:context="com.onynet.a30home.MainActivity">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#00FFFFFF"
+        android:elevation="5dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:targetApi="lollipop"
+        tools:showIn="@layout/activity_put">
+
+        <TextView
+            android:id="@+id/toolbar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/icons"
+            android:textSize="17.5sp"
+            android:typeface="normal"
+            android:text="30到家"/>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_msg"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_marginRight="@dimen/spacing"
+            >
+            <ImageView
+                android:id="@+id/main_iv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_msg"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:id="@+id/main_iv_msg_icon"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/msg_solid"
+                android:layout_alignTop="@+id/main_iv_msg"
+                android:layout_alignRight="@+id/main_iv_msg"
+                android:layout_alignEnd="@+id/main_iv_msg"
+                android:layout_marginTop="7dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/main_content"/>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/main_navigation_header"
+            app:menu="@menu/main_navigation_menu"
+            app:itemTextColor="@color/primary"
+            app:itemIconTint="@null"
+             />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
+

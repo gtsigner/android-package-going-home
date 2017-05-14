@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_batch_put"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_bg"
+    android:orientation="vertical"
+    tools:context="com.onynet.a30home.activity.PutActivity">
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="@dimen/spacing"
+                    android:layout_marginRight="@dimen/spacing"
+                    android:layout_marginTop="@dimen/spacing"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/spacing"
+                        android:text="@string/momentum_msg_package"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/put_tv_msg_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView"
+                        android:padding="@dimen/spacing"
+                        android:text="0"
+                        android:textColor="@color/primary"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/put_btn_unifies_send_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_solid_bg"
+                        android:foreground="?android:selectableItemBackground"
+                        android:text="@string/unified_send_msg"
+                        android:textColor="@color/icons" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView style="@style/activity_put_card_view_style">
+
+                <LinearLayout style="@style/activity_put_ll_style">
+
+                    <EditText
+                        android:id="@+id/put_et_theAwb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:background="@null"
+                        android:hint="@string/the_awb"
+                        android:inputType="number"
+                        android:padding="@dimen/spacing" />
+
+                    <ImageView
+                        android:id="@+id/put_iv_scan"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/img_scan" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView style="@style/activity_put_card_view_style">
+
+                <LinearLayout
+                    android:id="@+id/put_ll_express_company"
+                    style="@style/activity_put_ll_style">
+
+                    <TextView
+                        android:id="@+id/put_tv_express_company_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:padding="@dimen/spacing"
+                        android:text="@string/express_company"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/ic_down_arrow" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView style="@style/activity_put_card_view_style">
+
+                <LinearLayout style="@style/activity_put_ll_style">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/put_act_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:background="@null"
+                        android:completionThreshold="7"
+                        android:hint="@string/auto_number"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:padding="@dimen/spacing" />
+
+                    <ImageView
+                        android:id="@+id/put_iv_number"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_clear"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView style="@style/activity_put_card_view_style">
+
+                <LinearLayout style="@style/activity_put_ll_style">
+
+                    <EditText
+                        android:id="@+id/put_et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:background="@null"
+                        android:hint="姓名(非必填)"
+                        android:padding="@dimen/spacing" />
+
+                    <ImageView
+                        android:id="@+id/put_iv_name"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_clear"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView style="@style/activity_put_card_view_style">
+
+                <LinearLayout style="@style/activity_put_ll_style">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/spacing"
+                            android:text="@string/location"
+                            android:textColor="@color/primary"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/put_et_building"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="楼栋号"
+                        android:inputType="text"
+                        android:padding="@dimen/spacing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/spacing"
+                        android:layout_marginRight="@dimen/spacing"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/put_et_home_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="房号"
+                        android:inputType="text"
+                        android:padding="@dimen/spacing" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView style="@style/activity_put_card_view_style">
+
+                <LinearLayout style="@style/activity_put_ll_style">
+
+
+                    <LinearLayout
+                        android:id="@+id/put_ll_goods_flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/put_tv_package_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/spacing"
+                            android:gravity="center"
+                            android:text="A普通件"
+                            android:textColor="@color/primary"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@mipmap/ic_down_arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/divider_width_size"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider" />
+
+                    <EditText
+                        android:id="@+id/put_et_package_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/package_type"
+                        android:inputType="text"
+                        android:padding="@dimen/spacing" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView style="@style/activity_put_card_view_style">
+
+                <EditText
+                    android:id="@+id/put_et_up_goods_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/spacing"
+                    android:layout_marginRight="@dimen/spacing"
+                    android:background="@null"
+                    android:hint="@string/up_goods_code"
+                    android:inputType="number"
+                    android:padding="@dimen/spacing" />
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/put_btn_reset"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_border_bg"
+                        android:foreground="?android:selectableItemBackground"
+                        android:text="@string/reset"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/btn_text_size" />
+
+                    <Button
+                        android:id="@+id/put_btn_submit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_solid_bg"
+                        android:foreground="?android:selectableItemBackground"
+                        android:text="@string/confirm"
+                        android:textColor="@color/icons"
+                        android:textSize="@dimen/btn_text_size" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

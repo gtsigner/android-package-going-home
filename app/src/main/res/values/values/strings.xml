@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">熊猫快收</string>
+    <string name="help">帮助</string>
+    <string name="logout">注销</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:id="@+id/toast_emailOne_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toast_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            >
+            <ImageView
+                android:id="@+id/toast_iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/img_successful" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primary"/>
+            <TextView
+                android:layout_marginTop="@dimen/spacing"
+                android:id="@+id/textToast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入库成功！"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

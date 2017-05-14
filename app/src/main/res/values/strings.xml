@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">30到家</string>
+    <string name="help">帮助</string>
+    <string name="logout">注销</string>
+    <string name="scan">提货码/手机号/运单号/房号</string>
+    <string name="query">查件</string>
+    <string name="package_put">包裹入库</string>
+    <string name="package_out">包裹出库</string>
+    <string name="package_error">问题件处理</string>
+    <string name="package_move">包裹移库</string>
+
+    <string name="express">寄快递</string>
+    <string name="data">数据中心</string>
+    <string name="sms">短信</string>
+    <string name="set">设置</string>
+    <string name="express_company">快递公司</string>
+    <string name="submit">提交</string>
+    <string name="input_number">输入手机号码</string>
+    <string name="empty">清空</string>
+    <string name="number">手机号</string>
+    <string name="the_awb">运单号</string>
+    <string name="name">姓名</string>
+    <string name="reset">重置</string>
+    <string name="confirm_put">确认入库</string>
+    <string name="msg_inform">短信通知</string>
+    <string name="change">修改</string>
+    <string name="business_hours">营业时间:</string>
+    <string name="wechat_inform">微信通知</string>
+    <string name="set_template">设置模版</string>
+    <string name="version_number">版本号</string>
+    <string name="version_update">版本更新</string>
+    <string name="about">关于我们</string>
+    <string name="setting">设置</string>
+    <string name="input_email_number">输入邮箱/手机号</string>
+    <string name="input_password">输入密码</string>
+    <string name="remember_password">记住密码</string>
+    <string name="auto_login">自动登录</string>
+    <string name="login">登录</string>
+    <string name="login_30">30到家超市账号登录</string>
+    <string name="reject">拒收件</string>
+    <string name="inform">通知中</string>
+    <string name="arrive_station">已到站</string>
+    <string name="up_goods">本月已提货</string>
+    <string name="inform_failure">通知失败</string>
+    <string name="top_up">充值</string>
+    <string name="selected_express_company">选择快递公司</string>
+    <string name="select_all">全选</string>
+    <string name="resend">重新发送</string>
+    <string name="stat">统计</string>
+    <string name="unified_send_msg">统一发短信</string>
+    <string name="momentum_msg_package">待发短信包裹:</string>
+    <string name="location">地址:</string>
+    <string name="detailed_location">楼栋号+房号(非必填)</string>
+    <string name="package_type">包裹类型(非必填)</string>
+    <string name="up_goods_code">提货码</string>
+    <string name="confirm">确认入库</string>
+    <string name="please_scan_theAwb">请扫描运单号(支持手动输入)</string>
+    <string name="confirm_out">确认出库</string>
+    <string name="selected_package_type">选择包裹类型</string>
+    <string name="YiDaoZhan">已到站</string>
+    <string name="YiYiKu">已移库</string>
+    <string name="YiChuKu">已出库</string>
+    <string name="all_put">批量出库</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo_put">拍照自动出库</string>
+    <string name="insert">插入</string>
+    <string name="confirm_add">确认添加</string>
+    <string name="add_tmpl">添加模版</string>
+    <string name="set_default">设为默认</string>
+    <string name="edit">编辑</string>
+    <string name="del">删除</string>
+    <string name="set_sms_tpl">设置短信模版</string>
+    <string name="add">添加</string>
+    <string name="default_tpl">默认模版</string>
+    <string name="msg_center">消息中心</string>
+    <string name="msg_details">详情消息</string>
+    <string name="move">确认移库</string>
+    <string name="push_time">入库时间</string>
+    <string name="package_manager">包裹管理</string>
+    <string name="back">退回快递公司</string>
+    <string name="save">保存当前信息</string>
+    <string name="YiTuiJian">已退件</string>
+
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+    <string name="TIPS">温馨提示</string>
+    <string name="difficult_user">该用户是疑难用户\n是否继续入库?</string>
+    <string name="out_success">出库成功</string>
+    <string name="move_success">移库成功</string>
+    <string name="put_success">入库成功</string>
+    <string name="save_img">保存图片</string>
+    <string name="explain">说明</string>
+    <string name="auto_number">手机号(后四位自动匹配)</string>
+
+</resources>

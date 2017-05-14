@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="innerrect">
+        <attr name="inner_width" format="dimension"/>
+        <attr name="inner_height" format="dimension"/>
+        <attr name="inner_margintop" format="dimension" />
+        <attr name="inner_corner_color" format="color" />
+        <attr name="inner_corner_length" format="dimension" />
+        <attr name="inner_corner_width" format="dimension" />
+        <attr name="inner_scan_bitmap" format="reference" />
+        <attr name="inner_scan_speed" format="integer" />
+        <attr name="inner_scan_iscircle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AislliRecyclerview">
+        <attr name="ClipToPadding" format="boolean" />
+        <attr name="Padding" format="dimension" />
+        <attr name="PaddingTop" format="dimension" />
+        <attr name="PaddingBottom" format="dimension" />
+        <attr name="PaddingLeft" format="dimension" />
+        <attr name="PaddingRight" format="dimension" />
+        <attr name="EmptyView" format="reference" />
+        <attr name="layout_moreProgress" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PowerImageView">
+        <attr name="auto_play" format="boolean">true</attr>
+    </declare-styleable>
+
+</resources>
